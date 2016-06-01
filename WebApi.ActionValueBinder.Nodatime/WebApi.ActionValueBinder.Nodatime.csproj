@@ -54,8 +54,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="Webapi.ActionValueBinder.Contrib, Version=0.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Webapi.ActionValueBinder.Contrib.0.0.1\lib\net452\Webapi.ActionValueBinder.Contrib.dll</HintPath>
+    <Reference Include="Webapi.ActionValueBinder.Contrib, Version=0.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Webapi.ActionValueBinder.Contrib.0.0.2\lib\net452\Webapi.ActionValueBinder.Contrib.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

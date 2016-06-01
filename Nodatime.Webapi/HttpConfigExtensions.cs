@@ -1,16 +1,20 @@
 ﻿using System.Web.Http;
-using System.Web.Http.ModelBinding;
-using System.Web.Http.ModelBinding.Binders;
-using NodaTime;
+using System.Web.Http.Controllers;
+using Webapi.ActionValueBinder.Contrib;
 
 namespace Nodatime.Webapi
 {
     public static class HttpConfigExtensions
     {
-	    public static void ConfigureNodatimeWebapi(this HttpConfiguration config)
+	    public static void ConfigureNodatimeWebApi(this HttpConfiguration config)
 	    {
-			var provider = new SimpleModelBinderProvider(typeof(Instant), new InstantModelBinder());
-			config.Services.Insert(typeof(ModelBinderProvider), 0, provider);
+			ConfigureNodatimeWebApi(config, new MultiActionBinder());
 		}
-    }
+
+	    public static void ConfigureNodatimeWebApi(this HttpConfiguration config, MultiActionBinder actionValueBinder)
+	    {
+			actionValueBinder.AddBinding(new InstantBinder());
+			config.Services.Replace(typeof(IActionValueBinder), actionValueBinder);
+		}
+	}
 }

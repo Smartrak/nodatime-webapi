@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Nodatime.Webapi")]
+[assembly: AssemblyTitle("WebApi.ActionValueBinder.Nodatime")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Nodatime.Webapi")]
+[assembly: AssemblyProduct("WebApi.ActionValueBinder.Nodatime")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -37,5 +37,5 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyInformationalVersion(AssemblyMeta.Version)]
 internal static class AssemblyMeta
 {
-	public const string Version = "1.0.0";
+	public const string Version = "2.0.0";
 }

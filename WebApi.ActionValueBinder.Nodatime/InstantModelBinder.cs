@@ -2,7 +2,7 @@
 using System.Web.Http.ModelBinding;
 using NodaTime.Text;
 
-namespace Nodatime.Webapi
+namespace WebApi.ActionValueBinder.Nodatime
 {
 	public class InstantModelBinder : IModelBinder
 	{

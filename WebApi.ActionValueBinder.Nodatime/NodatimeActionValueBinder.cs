@@ -2,7 +2,7 @@
 using NodaTime;
 using Webapi.ActionValueBinder.Contrib;
 
-namespace Nodatime.Webapi
+namespace WebApi.ActionValueBinder.Nodatime
 {
 	public class InstantBinder : IActionBinding
 	{

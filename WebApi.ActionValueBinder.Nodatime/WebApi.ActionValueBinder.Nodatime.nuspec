@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>$id$</id>
+		<version>$version$</version>
+		<authors>Smartrak</authors>
+		<description>Helper on webapi actionvaluebinder to allow Nodatime modelbinding</description>
+		<projectUrl>https://github.com/Smartrak/webapi-actionvaluebinder-nodatime/$id$</projectUrl>
+		<licenseUrl>https://raw.githubusercontent.com/Smartrak/webapi-actionvaluebinder-nodatime/master/LICENSE</licenseUrl>
+	</metadata>
+</package>

@@ -4,7 +4,7 @@ This repo is for wiring up web api (or mvc) to use nodatime through model bindin
 
 example usage:
 
-{
+```
 	public void Configure(IAppBuilder app)
 	{
 		app.UseCors(CorsOptions.AllowAll);
@@ -16,4 +16,4 @@ example usage:
 
 		config.EnsureInitialized();
 	}
-}
+```

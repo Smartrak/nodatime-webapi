@@ -4,14 +4,16 @@ This repo is for wiring up web api (or mvc) to use nodatime through model bindin
 
 example usage:
 
-public void Configure(IAppBuilder app)
 {
-	app.UseCors(CorsOptions.AllowAll);
+	public void Configure(IAppBuilder app)
+	{
+		app.UseCors(CorsOptions.AllowAll);
 
-	var config = new HttpConfiguration();
-	config.MapHttpAttributeRoutes();
+		var config = new HttpConfiguration();
+		config.MapHttpAttributeRoutes();
 
-	config.ConfigureNodatimeWebApi();
+		config.ConfigureNodatimeWebApi();
 
-	config.EnsureInitialized();
+		config.EnsureInitialized();
+	}
 }
